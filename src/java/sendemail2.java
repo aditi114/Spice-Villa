@@ -30,8 +30,8 @@ public class sendemail2 extends HttpServlet {
         time = request.getParameter("time");
         date = request.getParameter("date");
         location = request.getParameter("location");
-        final String username = "spicevilla04@gmail.com";
-        final String password = "@spicevilla";
+        final String username = "xxx@gmail.com";
+        final String password = "xxx";
         Properties props = new Properties();
         props.put("mail.smtp.auth", true);
         props.put("mail.smtp.starttls.enable", true);

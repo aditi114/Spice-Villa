@@ -327,10 +327,10 @@
                     <div class="col-sm-4">
                         <h5>About Us</h5>
                         <p>
-                                    Owners: Bhavik Mehta And Aditi Kulkarni<br>
+                                    Owners: Owner 1 and Owner 2<br>
                                     Our Branches: Mulund | Borivali | Thane | Andheri | Vashi<br>
-                                    <a href = "mailto: spicevilla04@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: spicevilla04@gmail.com</a>
-                                    Contact: 9820623217<br>   
+                                    <a href = "mailto: xxx@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: xxx@gmail.com</a>
+                                    Contact: 9999999999<br>   
                         </p>
 
                     </div>

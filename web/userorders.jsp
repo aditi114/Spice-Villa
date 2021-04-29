@@ -120,7 +120,7 @@
         </div>
         <h2 style="text-align: center" ><em><b>Thank You For Ordering !!</b></em></h2>
         <h4 style="text-align: center" ><em><b>We Hope You Enjoy Your Meal</b></em></h4>
-        <h4 style="text-align: center" ><em><b>Drop Your Feedback here <a href = "mailto: spicevilla04@gmail.com">spicevilla04@gmail.com</a></b></em></h4>
+        <h4 style="text-align: center" ><em><b>Drop Your Feedback here <a href = "mailto: xxx@gmail.com">xxx@gmail.com</a></b></em></h4>
     </body>
     <footer>
         <div class="footer">
@@ -129,10 +129,10 @@
                     <div class="col-sm-4">
                         <h5>About Us</h5>
                         <p>
-                                    Owners: Bhavik Mehta And Aditi Kulkarni<br>
+                                    Owners: Owner 1 and Owner 2<br>
                                     Our Branches: Mulund | Borivali | Thane | Andheri | Vashi<br>
-                                    <a href = "mailto: spicevilla04@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: spicevilla04@gmail.com</a>
-                                    Contact: 9820623217<br>   
+                                    <a href = "mailto: xxx@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: xxx@gmail.com</a>
+                                    Contact: 9999999999<br>   
                         </p>
 
                     </div>

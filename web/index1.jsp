@@ -103,7 +103,6 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-<!--                    https://apps.elfsight.com/panel/applications/google-maps/-->
                     <div class="elfsight-app-95f0c4ba-e5b0-41eb-9bc5-098516d58a7d"></div>   
                 </div>
             </div>
@@ -233,10 +232,10 @@
                         <div class="col-sm-4">
                             <h5>About Us</h5>
                             <p>
-                                        Owners: Bhavik Mehta And Aditi Kulkarni<br>
-                                        Our Branches: Mulund | Borivali | Thane | Andheri | Vashi<br>
-                                        <a href = "mailto: spicevilla04@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: spicevilla04@gmail.com</a>
-                                        Contact: 9820623217<br>   
+                                    Owners: Owner 1 and Owner 2<br>
+                                    Our Branches: Mulund | Borivali | Thane | Andheri | Vashi<br>
+                                    <a href = "mailto: xxx@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: xxx@gmail.com</a>
+                                    Contact: 9999999999<br>   
                             </p>
 
                         </div>
