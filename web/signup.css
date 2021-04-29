@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Apr-2021, 10:55:01 pm
+    Author     : Aditi
+*/
+body
+{
+    background-image: url("media/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+nav
+{
+    background-color: #F0BDA0;
+    border-bottom: black solid 1px;
+   
+}
+.nav-link
+{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.nav-item a:hover
+{
+     color: white;
+    
+}
+.modal-content
+{
+   background-color: #E7C6B4;
+    color: black;
+    font-weight: bolder;
+    padding: 7px;
+    font-family: 'Merriweather', serif;
+    border: 3px solid black;
+    opacity: 0.9;
+    
+}
+
+.modal-content:hover
+{
+    opacity:1;
+    transition: 2s;
+}
+.modal-content h3
+{
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+}
+.footer
+{
+    background-color: black;
+    color:#E7C6B4;
+    width: 100%;
+}
+.footer h6,.footer h5
+{
+    color: white;
+    
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  text-shadow: 2px 2px 3px red;
+}
+
+.fa:hover {
+    
+    color: #E7C6B4;
+    text-decoration: none;
+    transform: scale(1.5);
+    transition: 1s;
+    text-shadow: 2px 2px 3px red;
+}
+

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Home Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,39 +14,38 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     </head>
-    <script>
-        function login(){
-            window.alert("You Need To Log In First");
-        }
-    </script>
-    <body> 
+    <% String username= request.getParameter("username");%>
+    <% String status= request.getParameter("email");%>
+    <body>
         <nav class="navbar navbar-expand-sm">
             <a class="navbar-brand" href="#">
                 <img src="media/logo.PNG" alt="logo" style="width:200px;height: 40px">
             </a>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.jsp">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.jsp" onclick="login()">Order Online</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.jsp">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup.jsp">SignUp</a>  
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Guest User</a>  
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index1.jsp?username=<%=username%>&email=null">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.jsp?username=<%=username%>">Order Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.jsp">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="userorders.jsp?username=<%=username%>">My Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><%=username%></a>
+                    </li>
             </ul>
         </nav>
+                    <%
+                        if(status.equals("success")){
+                    %>
         <div style="text-align: center">
-            <span style="color: green;  font-size: 30px; font-weight: bolder; text-transform: uppercase;">
-                ${booked}                  
-            </span>
+            <h3 style="color: green;">Your table is booked! Please check your email for confirmation.</h3>
         </div>
+        <%}%>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
@@ -166,7 +165,7 @@
                 <div class="col-lg-8" style="background-position: center;background-image: url(media/booktable.jpg);background-repeat: no-repeat;background-size: auto;">
                     <div class="booktable" style="text-align: center;">
                         <h4>Book Your Table</h4>
-                        <form action="sendemail" method="post">
+                        <form action="sendemail2" method="post">
                         <div class="row">
                             <div class="col-lg-3"></div>
                             <div class="col-lg-3">
@@ -213,8 +212,13 @@
                                 <label for="member">Number of Members</label>
                                 <input type="number" name="members" min="1" max="20" placeholder="maximum 20 people" style="width: 200px">
                             </li>
+                            <li>
+                                        <label for="username">Username</label>
+                                        <select name="username">
+                                            <option><%=username%></option>
+                                        </select>
+                            </li>
                         </ul>
-
                         <div class="tablesubmit" style="text-align: center">
                             <button type="submit" class="btn btn-success">Book Now!</button>
                         </div>
@@ -222,50 +226,49 @@
                     </div>
                 </div>
             </div>  
-    <footer>
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h5>About Us</h5>
-                        <p>
-                                    Owners: Bhavik Mehta And Aditi Kulkarni<br>
-                                    Our Branches: Mulund | Borivali | Thane | Andheri | Vashi<br>
-                                    <a href = "mailto: spicevilla04@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: spicevilla04@gmail.com</a>
-                                    Contact: 9820623217<br>   
-                        </p>
-
-                    </div>
-                        <div class="col-sm-2" style="border-left: 1px #E7C6B4 solid">
-                            <h5>Timings:</h5>
+        <footer>
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h5>About Us</h5>
                             <p>
-                            <h6>Monday-Friday</h6>
-                            7AM-11AM- Breakfast<br>
-                            11AM-10PM- Lunch/Dinner
-                            <hr>
+                                        Owners: Bhavik Mehta And Aditi Kulkarni<br>
+                                        Our Branches: Mulund | Borivali | Thane | Andheri | Vashi<br>
+                                        <a href = "mailto: spicevilla04@gmail.com" style="text-decoration: none;color: #E7C6B4;">Email ID: spicevilla04@gmail.com</a>
+                                        Contact: 9820623217<br>   
                             </p>
+
                         </div>
-                    <div class="col-sm-2" style="padding-top: 35px;">
-                        <h6>Saturday-Sunday</h6>
-                        <p>
-                            8AM-11AM- Breakfast<br>
-                            11AM-11PM- Lunch/Dinner
-                        </p>         
-                    </div>
-                    <div class="col-sm-4" style="border-left: 1px #E7C6B4 solid">
-                        <h5>Follow us at:</h5>
-                        <p>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-youtube"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </p>      
+                            <div class="col-sm-2" style="border-left: 1px #E7C6B4 solid">
+                                <h5>Timings:</h5>
+                                <p>
+                                <h6>Monday-Friday</h6>
+                                7AM-11AM- Breakfast<br>
+                                11AM-10PM- Lunch/Dinner
+                                <hr>
+                                </p>
+                            </div>
+                        <div class="col-sm-2" style="padding-top: 35px;">
+                            <h6>Saturday-Sunday</h6>
+                            <p>
+                                8AM-11AM- Breakfast<br>
+                                11AM-11PM- Lunch/Dinner
+                            </p>         
+                        </div>
+                        <div class="col-sm-4" style="border-left: 1px #E7C6B4 solid">
+                            <h5>Follow us at:</h5>
+                            <p>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-youtube"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                            </p>      
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </body>
 </html>
-                                                             
